@@ -1,38 +1,49 @@
-.App {
+body {
+  font-family: 'Rockwell';
   text-align: center;
+  margin: 0 auto;
+  background-color: #36393f;
+  color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+#board {
+  height: 540px;
+  width: 630px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  background-color: blue;
+  border: 10px solid navy;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tile {
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+
+  background-color: #36393f;
+  border-radius: 50%;
+  border: 5px solid navy;
+}
+
+.red-piece {
+  background-color: red;
+}
+
+.yellow-piece {
+  background-color: yellow;
+}
+
+.confetti {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.changeColor {
+  color: lightskyblue;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.changeColor:hover {
+  color: navy;
 }
